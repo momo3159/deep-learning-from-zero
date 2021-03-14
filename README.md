@@ -6,5 +6,5 @@
 
 ```
 （docker build -t dl-zero .）     
-docker run -it --rm dl-zero foo.py
+docker run -it --rm dl-zero PATH/foo.py
 ```
