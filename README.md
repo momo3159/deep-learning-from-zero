@@ -1,10 +1,14 @@
 # deep-learning-from-zero
 
 ## 環境構築
-
-- Pythonスクリプトの実行  
-
+1. requirements.txtに依存パッケージを書く
+2. 以下のコマンドを実行
 ```
-（docker build -t dl-zero .）     
-docker run -it --rm dl-zero PATH/foo.py
+docker build -t dl-zero .
+```
+
+## Pythonスクリプトの実行  
+1. 以下のコマンドを実行
+```     
+docker run -it --rm -it -v $PWD:/work dl-zero python foo/bar.py
 ```
