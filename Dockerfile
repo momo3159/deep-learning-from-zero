@@ -1,8 +1,13 @@
 FROM python:3
 
-ARG FILEDIR
+WORKDIR .
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD python $FILEDIR
+COPY . .
+ENTRYPOINT ["python"]
+CMD ["./main.py"] 
+
+
+
